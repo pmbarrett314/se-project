@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><title>List of hits</title></head>
+<body>
+    <table>
+        {% for entry in entries %}
+        <tr>
+            <td>{{entry.time|e}}</td>
+            <td>{{entry.ip|e}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
